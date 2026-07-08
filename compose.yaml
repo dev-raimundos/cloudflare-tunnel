@@ -8,7 +8,10 @@ services:
       TUNNEL_TOKEN: "${TUNNEL_TOKEN}"
     networks:
       - home-network
+      - coolify
 
 networks:
   home-network:
+    external: true
+  coolify:
     external: true
