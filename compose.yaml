@@ -6,8 +6,6 @@ services:
     command: "tunnel run"
     environment:
       TUNNEL_TOKEN: "${TUNNEL_TOKEN}"
-    networks:
-      - coolify
     healthcheck:
       test: ["CMD", "cloudflared", "tunnel", "ready"]
       interval: 30s
